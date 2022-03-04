@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Deklarasi variable untuk menyimpan email dan password
     String nama, password;
+
+    String email, passwordAnda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                email = "hafidzekapradana@gmail.com";
+                passwordAnda = "hafidz2022";
+
 
                 //menyimpan input user diedittext email kedalam variable name
                 nama = edemail.getText().toString();
@@ -42,9 +47,23 @@ public class MainActivity extends AppCompatActivity {
                 password = edpassword.getText().toString();
 
                 //membuat variable toast dan membuat toast dengan menambah nama dan password
-                Toast t = Toast.makeText(getApplicationContext(), "Email Anda : "+nama+ "dan Password anda : " +password+"",Toast.LENGTH_LONG);
+                //Toast t = Toast.makeText(getApplicationContext(), "Email Anda : "+nama+ "dan Password anda : " +password+"",Toast.LENGTH_LONG);
                 //menampilkan toast
-                t.show();
+                //t.show();
+
+                if((nama.equals(email)) && (password.equals(passwordAnda))){
+                    Toast t = Toast.makeText(getApplicationContext(), "Login Sukses",Toast.LENGTH_LONG);
+                    t.show();
+                }else if((nama.equals(email)) && (password != passwordAnda)){
+                    Toast t = Toast.makeText(getApplicationContext(), "Password Salah",Toast.LENGTH_LONG);
+                    t.show();
+                }else if((nama != email) && (password.equals(passwordAnda))){
+                    Toast t = Toast.makeText(getApplicationContext(), "Email Salah",Toast.LENGTH_LONG);
+                    t.show();
+                }else{
+                    Toast t = Toast.makeText(getApplicationContext(), "Email dan Password Salah",Toast.LENGTH_LONG);
+                    t.show();
+                }
             }
         });
     }
