@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityHasil"
+            android:label="@string/label2"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

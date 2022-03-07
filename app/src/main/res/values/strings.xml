@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Activity Kedua</string>
+    <string name="app_name">Activity Mobile</string>
     <string name="tEmail">Email :</string>
     <string name="tPassword">Password :</string>
     <string name="bsigin">Sign-In</string>
@@ -7,8 +7,8 @@
     <string name="login">Login</string>
     <string name="tData">Data anda</string>
     <string name="var1">Ini Pesan</string>
-    <string name="txEmail">Ini hasil Email</string>
-    <string name="txPassword">Ini hasil Password</string>
+    <string name="txemail">Ini hasil Email</string>
+    <string name="txpassword">Ini hasil Password</string>
     <string name="label2">Login Berhasil</string>
 
 </resources>
