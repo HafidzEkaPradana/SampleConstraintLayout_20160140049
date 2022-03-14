@@ -1,8 +1,11 @@
 package com.example.sampleconstraintlayout;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,6 +21,26 @@ public class MainActivity extends AppCompatActivity {
 
     //Deklarasi variable untuk menyimpan email dan password
     String nama, password;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //method untuk menampilkan menu
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //membuat kondisi jika yang dipilih adalah id mnDaftar
+        if(item.getItemId() == R.id.mnDaftar)
+        {
+            //method memanggil activity "Pendaftaran"
+            Intent i = new Intent(getApplicationContext(), Pendaftaran.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

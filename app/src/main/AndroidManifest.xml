@@ -10,18 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstraintLayout">
         <activity
+            android:name=".Pendaftaran"
+            android:parentActivityName=".MainActivity" ></activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
