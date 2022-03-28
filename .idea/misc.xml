@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/SampleConstraintLayout/app/classnama/src/main/res/layout/activity_main.xml" value="0.16394927536231885" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_hasil.xml" value="0.184375" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_home.xml" value="0.16394927536231885" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_kedua.xml" value="0.184375" />
-        <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_lihat_data.xml" value="0.16394927536231885" />
+        <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_lihat_data.xml" value="0.22" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_main.xml" value="0.184375" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/activity_pendaftaran.xml" value="0.184375" />
         <entry key="..\:/Project/SampleConstraintLayout/app/src/main/res/layout/item_listview.xml" value="0.16394927536231885" />

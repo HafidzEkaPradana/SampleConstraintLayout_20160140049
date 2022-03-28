@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
 
                 //set isi email yang benar
-                String email = "hafidzekapradana@gmail.com";
+                String email = "hafidz@gmail.com";
                 //set password yang benar
-                String passwordAnda = "hafidz2022";
+                String passwordAnda = "hafidz99";
 
 
                 //menyimpan input user diedittext email kedalam variable name
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("b", password.trim());
 
                         //membuat object indent berpindah activity dari mainactivity ke activityhasil
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
 
                         //memasukkan bundle ke dalam intent untuk dikirimkan ke activityHasil
                         i.putExtras(b);

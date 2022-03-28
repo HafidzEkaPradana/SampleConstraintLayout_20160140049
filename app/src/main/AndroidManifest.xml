@@ -11,9 +11,11 @@
         android:theme="@style/Theme.SampleConstraintLayout">
         <activity
             android:name=".ActivityLihatData"
+            android:parentActivityName=".Home_Activity"
             android:exported="false" />
         <activity
             android:name=".Home_Activity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Pendaftaran"
