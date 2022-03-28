@@ -9,17 +9,15 @@ public class ActivityLihatData extends AppCompatActivity {
 
     TextView tvnama, tvnomor;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_data);
 
-
         Bundle bundle = getIntent().getExtras();
         String nama = bundle.getString("a");
+        tvnama = findViewById(R.id.tvNamaKontak);
+        tvnomor = findViewById(R.id.tvNomorTelepon);
 
         switch (nama){
             case "Inayah":
@@ -62,9 +60,7 @@ public class ActivityLihatData extends AppCompatActivity {
                 tvnama.setText("Vian N");
                 tvnomor.setText("08184724433");
                 break;
-
         }
-
 
     }
 }
